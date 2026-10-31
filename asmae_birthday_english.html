@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f3">
+<title>For Asmae — Happy Birthday</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap');
+:root{--rose:#c94f70;--deep:#87364f;--pink:#ffe3eb}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:#663746;background:radial-gradient(circle at 15% 10%,#fff 0 8%,transparent 28%),linear-gradient(145deg,#fff6f4,#ffe8ef 55%,#f8e5ed);font-family:'Nunito',sans-serif;overflow-x:hidden}
+main{width:min(760px,92%);margin:0 auto;padding:34px 0 60px;text-align:center;position:relative;z-index:1}
+.pill{display:inline-block;padding:7px 17px;border:1px solid #f1b9c8;border-radius:99px;color:var(--rose);font-size:13px;background:#ffffffa8;letter-spacing:.5px}
+h1{font-family:'Amiri',serif;font-size:clamp(42px,9vw,68px);line-height:1.2;margin:18px 0 6px;color:var(--deep)}
+.subtitle{font-size:16px;color:#9a5a6c;margin:0 0 20px}
+.hero{position:relative;margin:18px auto 20px;width:min(390px,90%);padding:22px 18px 15px;border-radius:34px;background:#ffffff9c;border:1px solid #fff;box-shadow:0 18px 55px #b95b7520}
+.hamster{font-size:112px;line-height:1.35;filter:drop-shadow(0 7px 5px #9c536022);animation:bob 3s ease-in-out infinite}
+.hamster-caption{font-family:'Amiri',serif;font-size:23px;color:#a44b66}
+.tulips{font-size:35px;letter-spacing:7px;margin-top:8px}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-9px) rotate(2deg)}}
+.card{background:#fffdfbde;border:1px solid #fff;border-radius:28px;padding:25px 22px;margin:22px auto;box-shadow:0 12px 38px #a74b6412}
+.card h2{font-family:'Amiri',serif;font-size:31px;color:var(--deep);margin:0 0 12px}
+.card p{font-size:16px;line-height:1.9;margin:0;color:#704453}
+button{font-family:'Nunito',sans-serif;border:0;border-radius:999px;background:linear-gradient(135deg,#d96683,#b84668);color:white;padding:13px 25px;font-size:15px;font-weight:800;cursor:pointer;box-shadow:0 8px 20px #bd557044;transition:.2s}
+button:hover{transform:translateY(-2px);box-shadow:0 12px 25px #bd557055}
+#letter{display:none;text-align:left}
+#letter.show{display:block;animation:appear .8s ease}
+#letter p{font-family:'Nunito',sans-serif;font-size:17px;line-height:2;color:#663746}
+.signature{text-align:right!important;color:var(--rose)!important;font-weight:800}
+.heart-button{background:#fff;color:var(--rose);border:1px solid #f2bdcb;box-shadow:none;margin:5px}
+#heartCount{color:var(--rose);font-weight:800;margin-top:12px;min-height:24px}
+.floating{position:fixed;pointer-events:none;z-index:0;animation:floatUp 7s linear forwards;opacity:.7}
+@keyframes floatUp{from{transform:translateY(20px) scale(.7);opacity:0}15%{opacity:.8}to{transform:translateY(-105vh) scale(1.3);opacity:0}}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+footer{font-family:'Amiri',serif;font-size:20px;color:#a75b72;margin-top:30px}
+.small-note{font-size:13px;color:#a16b7b;margin-top:20px;letter-spacing:.5px}
+@media(max-width:480px){main{padding-top:22px}.card{padding:21px 17px}.card p{font-size:15px}#letter p{font-size:16px}}
+</style>
+</head>
+<body>
+<main>
+  <span class="pill">A LITTLE PAGE MADE WITH LOVE</span>
+  <h1>Happy Birthday, Asmae</h1>
+  <p class="subtitle">To the girl whose happiness means so much to me ❤️</p>
+
+  <section class="hero">
+    <div class="hamster" aria-label="A cute hamster">🐹</div>
+    <div class="hamster-caption">Your tiny birthday visitor is here!</div>
+    <div class="tulips">🌷 💗 🌷</div>
+  </section>
+
+  <section class="card">
+    <h2>Today is all about you ✨</h2>
+    <p>I hope this new chapter brings you beautiful surprises, peaceful days, exciting opportunities, and dreams that slowly turn into reality. You deserve a world as lovely as your heart.</p>
+    <div style="margin-top:20px"><button id="openBtn" onclick="openLetter()">Open my letter to you 💌</button></div>
+  </section>
+
+  <section class="card" id="letter">
+    <h2>A little something from my heart</h2>
+    <p>
+      My dearest Asmae,<br><br>
+      On your birthday, there is something I really want you to know: you deserve every bit of love I give you, and so much more. You deserve a love that makes you feel cherished, care that reminds you how precious you are, and days filled with the happiness your heart deserves.<br><br>
+      I wish I could give you a thousand reasons to smile, cheer for every dream you chase, and celebrate every little victory along the way. I love the little things that make you who you are — your own way of seeing the world, your beautiful heart, and all the details that make you so wonderfully you.<br><br>
+      I don't just wish you a beautiful birthday. I wish you a beautiful life: full of love, peace, laughter, exciting beginnings, and moments when you look around and realise how much good life has brought you. I hope you never settle for less than the kindness, joy, and love you deserve.<br><br>
+      Happy birthday, my love. May this year bring you closer to everything you've been wishing for. And whenever you need a reminder, remember this: you are deeply loved, and you deserve all of it. ❤️
+    </p>
+    <p class="signature">With all my love, always ❤️</p>
+  </section>
+
+  <section class="card">
+    <h2>Send a little love into the universe 💗</h2>
+    <p>Tap the button and let a tiny wish float your way.</p>
+    <div style="margin-top:17px"><button class="heart-button" onclick="sendHeart()">Send me a heart 💕</button></div>
+    <div id="heartCount" aria-live="polite"></div>
+  </section>
+
+  <div class="tulips">🌷 🌷 🌷</div>
+  <footer>Made just to remind you how loved you are.</footer>
+  <div class="small-note">HAPPY BIRTHDAY, MY LITTLE ANGEL ♡</div>
+</main>
+<script>
+function openLetter(){
+  const letter=document.getElementById('letter');
+  letter.classList.add('show');
+  document.getElementById('openBtn').textContent='Your letter is open ❤️';
+  letter.scrollIntoView({behavior:'smooth',block:'center'});
+  for(let i=0;i<9;i++) setTimeout(createHeart,i*130);
+}
+let hearts=0;
+function sendHeart(){
+  hearts++;
+  document.getElementById('heartCount').textContent='A little wish of love number '+hearts+' is on its way to you! 💗';
+  for(let i=0;i<12;i++) setTimeout(createHeart,i*90);
+}
+function createHeart(){
+  const el=document.createElement('span');
+  el.className='floating';
+  el.textContent=['💗','💕','🌷','❤️','✨'][Math.floor(Math.random()*5)];
+  el.style.left=Math.random()*95+'vw';
+  el.style.bottom='-35px';
+  el.style.fontSize=(18+Math.random()*20)+'px';
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),7200);
+}
+</script>
+</body>
+</html>
